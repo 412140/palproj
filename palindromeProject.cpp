@@ -30,7 +30,7 @@ cin.get(str, 80);
  for(int i = length - 1; i >= 0; i--)
    {
      
-     if(isalpha(str[i]) //from https://cplusplus.com/reference/cctype/isalpha/
+     if(isalpha(str[i])) //from https://cplusplus.com/reference/cctype/isalpha/
        {  
        str2[x] = str[i]; //loop SHOULD fill str2 with a backwards str I THINK
        } 
