@@ -29,8 +29,7 @@ cin.get(str, 80);
  int x = 0; //initialize variable that im gonna use to target parts of str2
  for(int i = length - 1; i >= 0; i--)
    {
-     
-     if(isalpha(str[i])) //from https://cplusplus.com/reference/cctype/isalpha/
+     if(isalnum(str[i])) //from https://cplusplus.com/reference/cctype/isalpha/
        {  
        str2[x] = str[i]; //loop SHOULD fill str2 with a backwards str I THINK
        } 
