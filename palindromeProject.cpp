@@ -40,7 +40,7 @@ cin.get(str, 80);
      isPalindrome = true;
      cout << "Palindrome";
    } else {
-   cout << "not a palindrome";
+   cout << "Not a palindrome";
  }
 
 }
