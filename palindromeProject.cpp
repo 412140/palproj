@@ -31,7 +31,7 @@ cin.get(str, 80);
    {
      if(!ispunct(str[i]) && !isspace(str[i])) //from https://cplusplus.com/reference/cctype/ispunct/ and https://cplusplus.com/reference/cctype/isspace/
        {
-       str2[x] = str[i]; //loop is filling str2 backwards with a lowercase of whatever str[i] is only if it meets the condition that str[i] is NOT a space or a punctuation mark
+       str2[x] = tolower(str[i]); //loop is filling str2 backwards with a lowercase of whatever str[i] is only if it meets the condition that str[i] is NOT a space or a punctuation mark
        }
      x++;
    }
