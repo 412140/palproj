@@ -22,17 +22,17 @@ int main()
 bool isPalindrome;
 char str[80];
 char str2[80];
- 
+
 cout << "input your string, max of 80 characters. \n";
-cin.get(str, 80);   
+cin.get(str, 80);
  int length = strlen(str); //get length
  int x = 0; //initialize variable that im gonna use to target parts of str2
  for(int i = length - 1; i >= 0; i--)
    {
-     if(isalnum(str[i])) //from https://cplusplus.com/reference/cctype/isalpha/
-       {  
-       str2[x] = str[i]; //loop SHOULD fill str2 with a backwards str I THINK
-       } 
+     if(!ispunct(str[i]) && !isspace(str[i])) //from https://cplusplus.com/reference/cctype/ispunct/ and https://cplusplus.com/reference/cctype/isspace/
+       {
+       str2[x] = str[i]; //loop is filling str2 backwards with a lowercase of whatever str[i] is only if it meets the condition that str[i] is NOT a space or a punctuation mark
+       }
      x++;
    }
  if(strcmp(str, str2) == 0) //function to compare cstrings and returns a value on what the result was
@@ -42,5 +42,8 @@ cin.get(str, 80);
    } else {
    cout << "not a palindrome";
  }
-  
+
 }
+
+
+
