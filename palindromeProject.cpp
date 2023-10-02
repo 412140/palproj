@@ -19,28 +19,6 @@ https://cplusplus.com/reference/cctype/
 
 int main()
 {
-File Edit Options Buffers Tools C++ Help
-#include <iostream>
-#include <cstring>
-#include <cctype>
-
-using namespace std;
-
-/*-
-ghazi abbas cpp shs sem1 galbraith
-program should be able to determine whether or not an inputed string is a palindrome
-this is accomplished by comparing arrays with cstring functions
-
-Sources:
-https://cplusplus.com/doc/tutorial/ntcs/
-https://cplusplus.com/reference/cstring/
-https://cplusplus.com/reference/cctype/
-*/
-
-
-
-int main()
-{
 
     char str[80];
     char str2[80];
